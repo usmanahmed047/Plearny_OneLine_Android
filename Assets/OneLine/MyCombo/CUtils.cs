@@ -199,10 +199,10 @@ public class CUtils
         if (IsActionAvailable("show_ads", GameConfig.instance.adPeriod))
         {
 #if UNITY_ANDROID || UNITY_IPHONE
-            if (!AdmobController.instance.ShowInterstitial())
+            /*if (!AdmobController.instance.ShowInterstitial())
             {
                 AdmobController.instance.RequestInterstitial();
-            }
+            }*/
 #else
             
 #endif
@@ -232,14 +232,14 @@ public class CUtils
         if (IsAdsRemoved()) return;
 
 #if UNITY_ANDROID || UNITY_IPHONE
-        AdmobController.instance.ShowBanner();
+        //AdmobController.instance.ShowBanner();
 #endif
     }
 
     public static void CloseBannerAd()
     {
 #if UNITY_ANDROID || UNITY_IPHONE
-        AdmobController.instance.DestroyBanner();
+        //AdmobController.instance.DestroyBanner();
 #endif
     }
 

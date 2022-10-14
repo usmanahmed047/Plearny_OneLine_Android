@@ -34,8 +34,8 @@ public class RewardedVideoButton : MonoBehaviour
         if (shopDialog != null) shopDialog.UpdateBalance();
     }
 
-    private bool IsAdAvailable()
+    /*private bool IsAdAvailable()
     {
         return AdmobController.instance.rewardedAd.IsLoaded();
-    }
+    }*/
 }
