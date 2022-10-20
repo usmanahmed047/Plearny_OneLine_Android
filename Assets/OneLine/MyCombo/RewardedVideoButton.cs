@@ -7,7 +7,7 @@ public class RewardedVideoButton : MonoBehaviour
 #if UNITY_EDITOR
         OnUserEarnedReward();
 #else
-        if (IsAdAvailable())
+        /*if (IsAdAvailable())
         {
             AdmobController.onUserEarnedReward = OnUserEarnedReward;
             AdmobController.instance.ShowRewardedAd();
@@ -15,7 +15,7 @@ public class RewardedVideoButton : MonoBehaviour
         else
         {
             Toast.instance.ShowMessage("Ad is not available now, please wait..");
-        }
+        }*/
 #endif
 
         Sound.instance.PlayButton();
